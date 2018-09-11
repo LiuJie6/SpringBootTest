@@ -15,5 +15,6 @@ public class Test {
         String str = "";
         System.out.println(!str.isEmpty());
         System.out.println(str != null);
+        System.out.println("111");
     }
 }
