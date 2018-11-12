@@ -17,9 +17,9 @@ public class RandomPSWD {
      *
      * @param passwordType 密码类型
      * @param length  密码长度
-     * @return
+     * @return 密码
      */
-    public static String GainRandomPSWD(PasswordType passwordType,int length){
+    private static String GainRandomPSWD(PasswordType passwordType,int length){
         String str = "";
         for(int i =0;i<length;i++) {
             switch (passwordType) {
