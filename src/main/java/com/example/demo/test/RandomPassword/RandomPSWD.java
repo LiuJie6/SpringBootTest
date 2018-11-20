@@ -30,7 +30,7 @@ public class RandomPSWD {
                     str += (char)(Math.random() * 26 + 'a');
                     break;
                 case NumberCase:
-                    str += String.valueOf((int)Math.random() * 10);
+                    str += String.valueOf((int)(Math.random() * 10));
                     break;
                 case MixCase:
                     Random random = new Random();
@@ -42,7 +42,7 @@ public class RandomPSWD {
                             str += (char)(Math.random() * 26 + 'a');
                             break;
                         case 2:
-                            str += String.valueOf((int)Math.random() * 10);
+                            str += String.valueOf((int)(Math.random() * 10));
                             break;
                         default:
                             break;
@@ -57,4 +57,10 @@ public class RandomPSWD {
     public static void main(String[] args) {
         System.out.println("随机输出10位混合密码："+GainRandomPSWD(PasswordType.MixCase,10));
     }
+
+    /**
+     * （1）Math.random()函数返回值介于[0.0,1.0)之间，注意不要使用(int)Math.random()*3这种形式结果总是0，因为会先执行
+     * 强制转换）
+     * （2）random .nextInt(n):生成一个随机的int值，介于[0,n)
+     */
 }
