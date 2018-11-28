@@ -1,4 +1,4 @@
-package com.example.demo.test.collection.map;
+package com.example.demo.test.dataStructureAndArithmetic.map;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Project Name:SpringBootTest
  * File Name:BLMap
- * Package Name:com.example.demo.test.collection.map
+ * Package Name:com.example.demo.test.dataStructureAndArithmetic.map
  * Date:2018/11/5
  * Author:liujie
  * Description:遍历map
