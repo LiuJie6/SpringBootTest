@@ -13,6 +13,11 @@ package com.example.demo.test.dataStructureAndArithmetic.sortArithmetic;
 
 public class InsertSort {
 
+    /**
+     * 时间复杂度为O(N^2),稳定
+     *
+     * @param a 待排序数组
+     */
     private static void insertSort(int[] a) {
         int j;
         for (int i = 1; i < a.length; i++) {   //下标为0的元素只有1个，默认有序
@@ -30,8 +35,8 @@ public class InsertSort {
     public static void main(String[] args) {
         int[] a = {11, 2, 34, 66, 36, 35, 14};
         insertSort(a);
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int num : a) {
+            System.out.print(num + " ");
         }
     }
 }
