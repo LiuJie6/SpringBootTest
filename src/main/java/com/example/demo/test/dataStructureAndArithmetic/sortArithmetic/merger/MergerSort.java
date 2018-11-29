@@ -9,8 +9,12 @@ package com.example.demo.test.dataStructureAndArithmetic.sortArithmetic.merger;
  * Description:归并排序具体实现
  * Copyright (c) 2018, 重庆云凯科技有限公司 All Rights Reserved.
  */
+
+
 public class MergerSort {
 
+    //(1)分治与递归
+    //(2)时间复杂度为O(log(N)),稳定
     private void mergerSort(int[] c, int start, int last) {
         if (last > start) {
             int mid = (last - start) / 2 + start;
@@ -39,15 +43,12 @@ public class MergerSort {
         while (j <= mid && k >= last) {
             temp[i++] = c[j++];
         }
-
-        for (int m = 0; m < temp.length; m++) {
-            c[start + m] = temp[m];
-        }
+        System.arraycopy(temp,0,c,start,temp.length);
     }
 
     public static void main(String[] args) {
         MergerSort mergerSort = new MergerSort();
-        int[] c = {1, 11, 34, 56, 35};
+        int[] c = {1, 11, 34, 56, 35, 2, 33};
         mergerSort.mergerSort(c, 0, c.length - 1);
         for (int cElement : c) {
             System.out.print(cElement + " ");
