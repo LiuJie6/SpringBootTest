@@ -21,7 +21,7 @@ public class SelectSort {
      */
     private static void selectSort(int[] a) {
         for (int i = 0; i < a.length - 1; i++) {
-            for (int j = i + 1; j < a.length; j++) {
+            for (int j = i + 1; j < a.length; j++) { //升序的话，每次都把最小的排在对应的位置，比较的不是两个相邻元素
                 swap(a, i, j);
             }
         }
