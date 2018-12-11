@@ -13,7 +13,7 @@ package com.example.demo.test.dataStructureAndArithmetic.recursion;
 
 public class BinarySearch {
 
-    public int binarySearch(int[] array, int start, int end, int value) {
+    private int binarySearch(int[] array, int start, int end, int value) {
         int mid = (end - start) / 2 + start;   //防止两者直接相加大于整形最大值
         if (start > end) {
             return -1;
