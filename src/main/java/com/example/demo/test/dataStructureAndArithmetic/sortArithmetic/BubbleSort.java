@@ -19,8 +19,8 @@ public class BubbleSort {
      * @param a 要排序的数组
      */
     private static void bubbleSort(int[] a) {
-        for (int i = 1; i < a.length; i++) {     //外层循环控制排序趟数
-            for (int j = 0; j < a.length - 1; j++) {   //内层循环控制每一趟排序多少次
+        for (int i = 1; i < a.length; i++) {     //外层循环控制排序趟数，第n次排序就把第n大的元素放在对应的位置
+            for (int j = 0; j < a.length - 1; j++) {   //内层循环控制每一趟排序多少次，总是比较相邻的两个元素
                 swap(a, j, j + 1);
             }
         }
