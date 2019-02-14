@@ -1,9 +1,9 @@
-package com.example.demo.test.designMode.Single;
+package com.example.demo.test.designMode.SinglePattren.Single;
 
 /**
  * Project Name:SpringBootTest
  * File Name:SingleObject
- * Package Name:com.example.demo.test.designMode.Single
+ * Package Name:com.example.demo.test.designMode.SinglePattren.Single
  * Date:2018/9/3
  * Author:liujie
  * Description:

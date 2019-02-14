@@ -2,7 +2,6 @@ package com.example.demo.test.calendar;
 
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Map;
 
 /**
  * Project Name:SpringBootTest
@@ -17,7 +16,7 @@ import java.util.Map;
 
 public class CalendarTest {
 
-    static Calendar calendar = Calendar.getInstance();  //Calendar是一个abstract，无法直接new
+    private static Calendar calendar = Calendar.getInstance();  //Calendar是一个abstract，无法直接new
 
     public static void getTest(){
         calendar.setTime(new Date());
@@ -48,7 +47,7 @@ public class CalendarTest {
      * @param month 月份
      * @param day 天数
      */
-    public static void weekNum(int year,int month,int day){
+    private static void weekNum(int year,int month,int day){
         calendar.clear();
         calendar.set(Calendar.YEAR,year);
         calendar.set(Calendar.MONTH,month-1);

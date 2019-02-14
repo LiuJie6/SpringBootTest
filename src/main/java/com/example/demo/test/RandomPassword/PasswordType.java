@@ -1,6 +1,4 @@
-package com.example.demo.test.RandomPassword;/**
- * Created by liujie on 2018/8/29.
- */
+package com.example.demo.test.RandomPassword;
 
 /**
  * Project Name:SpringBootTest
