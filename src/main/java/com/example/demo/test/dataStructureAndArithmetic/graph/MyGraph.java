@@ -81,7 +81,7 @@ public class MyGraph {
      * 深度优先搜索
      * (1)用peek()方法测试栈顶元素
      * (2)用getUnvisitedVertex()方法找到与当前顶点相连且没有被访问的顶点
-     * (3)如果第二部返回值不为-1，表示满足条件，将该顶点入栈并设为已访问
+     * (3)如果第二步返回值不为-1，表示满足条件，将该顶点入栈并设为已访问
      * 如果返回值为-1，表示找不到满足条件的，栈顶元素出栈
      */
     public void depthFirstSearch() {
@@ -143,7 +143,7 @@ public class MyGraph {
     private int getUnvisitedVertex(int v) {
         for (int i = 0; i < nVertices; i++) {
             if (adjMat[v][i] == 1 && !verticesList[i].isVisited) {
-                return i;  //可能会有多个满足的，这里返回的时最前面那个
+                return i;  //可能会有多个满足的，这里返回的是最前面那个
             }
         }
         return -1;

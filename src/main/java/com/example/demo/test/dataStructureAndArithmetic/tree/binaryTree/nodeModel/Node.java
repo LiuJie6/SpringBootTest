@@ -16,7 +16,7 @@ public class Node {
     private int data;   //节点数据
     private Node leftChild;    //左节点
     private Node rightChild;   //右节点
-    boolean isDeleted;         //标识是否已删除
+    private boolean isDeleted;         //标识是否已删除
 
     public Node(int data){
         this.data = data;
