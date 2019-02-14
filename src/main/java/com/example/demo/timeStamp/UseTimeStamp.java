@@ -1,6 +1,8 @@
 package com.example.demo.timeStamp;
 
 import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Project Name:SpringBootTest
@@ -15,13 +17,20 @@ import java.sql.Timestamp;
 
 public class UseTimeStamp {
 
-    public static Timestamp getTime(){
-        long timeLong = 1535760000000L;
+    public static Timestamp getTime() {
+        long timeLong = 1548691200000L;
         Timestamp time = new Timestamp(timeLong);
-        return  time;
+        Date date = new Date(time.getTime());
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH) + 1;
+        int day = calendar.get(Calendar.DATE);
+        System.out.println(year + "-" + month + "-" + day);
+        return time;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(getTime());
     }
 }
