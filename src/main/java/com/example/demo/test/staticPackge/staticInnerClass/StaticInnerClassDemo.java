@@ -2,7 +2,7 @@ package com.example.demo.test.staticPackge.staticInnerClass;
 
 /**
  * Project Name:SpringBootTest
- * File Name:StaticInnerClassDemo
+ * File Name:Outer
  * Package Name:com.example.demo.test.staticPackge
  * Date:2019/2/14
  * Author:liujie
@@ -82,7 +82,7 @@ public class StaticInnerClassDemo {
 
     @Override
     public String toString() {
-        return "StaticInnerClassDemo{" +
+        return "Outer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
