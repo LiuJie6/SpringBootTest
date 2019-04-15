@@ -59,6 +59,6 @@ public class RandomPSWD {
     }
 
     public static void main(String[] args) {
-        System.out.println("随机输出10位混合密码：" + GainRandomPSWD(PasswordType.MixCase, 10));
+        System.out.println("随机输出10位混合密码：" + GainRandomPSWD(PasswordType.MixCase, 36));
     }
 }

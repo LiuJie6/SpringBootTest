@@ -1,6 +1,9 @@
 package com.example.demo.test.io.charProcess;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.io.*;
+import java.util.UUID;
 
 /**
  * Project Name:SpringBootTest
@@ -57,12 +60,13 @@ public class CharReadAndWriter {
     }
 
     public static void main(String[] args) {
-        try {
+        /*try {
             //charRAW("E:\\Test\\SpringBootTest\\read.txt", "E:\\Test\\SpringBootTest\\write.txt");
             testStreamReader("E:\\Test\\SpringBootTest\\read.txt", "E:\\Test\\SpringBootTest\\write.txt");
         } catch (Exception e) {
             System.out.println(e.getMessage());
-        }
+        }*/
+        Double[] array = new Double[0];
     }
 
     /**
