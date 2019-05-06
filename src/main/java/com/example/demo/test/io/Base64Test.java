@@ -61,7 +61,7 @@ public class Base64Test {
     }
 
     public static void main(String[] args) {
-        String base64Str = imageToBase64Str("C:\\Users\\liujie\\Desktop\\faceSample\\曾剑超.jpg");
+        String base64Str = imageToBase64Str("C:\\Users\\liujie\\Desktop\\faceSample\\吴志刚.JPG");
         System.out.println(base64Str);
 
         /*boolean b = base64StrToImage(base64Str, "E:/pic/temp/曹帜一.jpg");
